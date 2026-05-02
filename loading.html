@@ -15,11 +15,12 @@
     </style>
 </head>
 <body>
-    <audio id="music" loop volume="0.5">
+    <audio id="music" loop>
         <source src="musique.mp3#t=47" type="audio/mpeg">
     </audio>
 
     <script>
+        document.getElementById('music').volume = 0.3;
         document.addEventListener('click', function() {
             document.getElementById('music').play();
         });
